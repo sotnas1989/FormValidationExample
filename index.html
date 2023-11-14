@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Form Validation Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="/server" method="get">
+        <fieldset>
+            <legend>Add Person</legend>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Jhon" required><br>
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="lastName" placeholder="Doe" required><br>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" placeholder="20" min="0" max="120" required><br>
+            <datalist id="listSex"> <!-- A container of predetermined choices for the "sex" input -->                            
+                <option id="femOption" value="F" label="♀ Female"></option>
+                <option id="malqOption" value="M" label="♂ Male"></option>                
+            </datalist>
+            <label for="sex">Sex: </label>
+            <input pattern="[F,M]{1}" name="sex" id="sex" list="listSex" placeholder="M or F" title="Insert M or F" required>            
+        </fieldset>
+        <button type="submit" id="btonAdd">Add</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

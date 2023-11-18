@@ -1,6 +1,6 @@
 body {
 	width: 80%; 
-	margin: 20px auto;	
+	margin: 20px auto;
 } 
 
 
@@ -17,7 +17,8 @@ form {
 	box-shadow: 10px 10px 5px #888;
 	background-color: #eee;
 	padding: 10px;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	margin: auto;
 }
 
 fieldset {
@@ -36,8 +37,12 @@ input {
     width: 25%;    
 }
 
-button {
+#btonAdd {
     margin: 10px 0 0 0;
     border: 1px solid cornflowerblue;
     border-radius: 5px;
+}
+
+#btonAdd:hover {
+	background-color: #bbb7f0;
 }

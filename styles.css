@@ -28,7 +28,7 @@ legend {
     font-weight: bold;
 }
 
-input {
+input, select {
     margin: 10px 0 0 0;
 }
 
@@ -40,6 +40,7 @@ input {
     margin: 10px 0 0 0;
     border: 1px solid cornflowerblue;
     border-radius: 5px;
+	display: block;
 }
 
 #btonAdd:hover {

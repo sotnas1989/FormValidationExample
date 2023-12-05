@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="/server" method="get">
+    <form action="/server" autocomplete="off" method="get">
         <fieldset>
             <legend>Add Person</legend>
             <label for="name">Name: </label>
@@ -13,17 +13,14 @@
             <label for="lastName">Last Name: </label>
             <input type="text" name="lastName" id="lastName" placeholder="Doe" required><br>
             <label for="age">Age: </label>
-            <input type="number" name="age" id="age" placeholder="20" min="0" max="120" required><br>
-            <datalist id="listSex"> <!-- A container of predetermined choices for the "sex" input -->                            
+            <input type="number" name="age" id="age" placeholder="20" min="0" max="120" required><br>            
+            <label for="sex">Sex: </label>
+            <select name="sexSelect" id="sexSelect">
                 <option id="femOption" value="F" label="♀ Female"></option>
                 <option id="malqOption" value="M" label="♂ Male"></option>                
-            </datalist>
-            <label for="sex">Sex: </label>
-            <input pattern="[F,M]{1}" name="sex" id="sex" list="listSex" placeholder="M or F" title="Insert M or F" required>            
-        </fieldset>
+            </select>            
         <button type="submit" id="btonAdd">Add</button>
-    </form>
-    
+    </form>    
     <script src="script.js"></script>
 </body>
 </html>
